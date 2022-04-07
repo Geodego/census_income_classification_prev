@@ -29,5 +29,6 @@ file provided in the root of the repository and activate it:
 
 ## CI/CD
 ### CI
-Setup GitHub Actions on the repository. We use the pre-made GitHub Actions python-package-conda.yml and adapt it to
+- Setup GitHub Actions on the repository. We use the pre-made GitHub Actions python-package-conda.yml and adapt it to
 the version of python used: 3.8. This action runs pytest and flake8 on push and requires both to pass without error.
+- Add AWS credentials to the action (secrets need to be made available to the workflow by creating Repository Secret)
